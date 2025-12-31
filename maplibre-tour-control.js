@@ -13,7 +13,7 @@ export class MapLibreTourControl {
                 closeOnClick: true,
                 maxWidth: '350px',
                 offset: 25,
-                className: 'glass-popup' // Default to our glass theme
+                className: 'glass-popup' // Default to  glass theme
             }
         }, options);
 

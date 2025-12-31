@@ -1,11 +1,17 @@
 
-# MapLibre GL Tour Control
+# MapLibre Tour Control
 
 <img src="images/tour_control.png" alt="Tour Control" width="600">
 
+**Sample Tour:**  
+[Sample Tour](https://geomaps.site/#map=5.00/38.1880/-112.1299)
+
 **Turn your map into an interactive storytelling experience.**
 
-This community plugin adds a **Tour Widget** to your MapLibre map. You specify a list of locations and HTML content for each location and the widget displays that content. The Control can be used in four different ways:
+This plugin adds a **Tour Widget** to your MapLibre map. 
+You specify a list of locations and HTML content for each location and the widget displays that content. 
+
+The Control can be used in four different ways:
 
 ### 1. Story Mode
 *   The user clicks "Next," and the map flies to the next location and displays the narrative content for that site.
@@ -139,11 +145,11 @@ These files are simply **HTML Fragments**. You can include **any HTML that is va
 <!-- ✅ CORRECT -->
 <img src="{{BASE_URL}}images/diagram.png" alt="My Diagram">
 
-<!-- ❌ INCORRECT (Will break if tour is on remote server) -->
+<!-- ❌ INCORRECT (Will break if tour content is on remote server) -->
 <img src="images/diagram.png" alt="My Diagram">
 ```
 
-### Sample Content Package
+### Sample Tour Content Package
 [View a complete example tour package here (US West)](https://github.com/corb555/geo-tour/tree/main/USWest)
 
 ---
@@ -169,8 +175,8 @@ These files can live in a separate folder or a remote repository (e.g., GitHub).
 
 ```text
 /
-├── tour_manifest.json        <-- The Entry Point
-└── content/
+├── tour_manifest.json        <-- The Manifest
+└── content/                  <-- HTML pages for each stop
     ├── intro.html
     ├── yosemite.html
     └── images/
